@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>臺灣郵遞區號查詢</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">郵遞區號查詢</h1>
+
+        <div class="field">
+            <label class="label" for="city">縣市</label>
+            <div class="control">
+                <input id="city" class="input" type="text" placeholder="例：臺北市、苗栗縣" />
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="dist">鄉鎮（市）區</label>
+            <div class="control">
+                <input id="dist" class="input" type="text" placeholder="例：中正區、板橋區" />
+            </div>
+        </div>
+        <div class="field">
+            <label class="label" for="road">路（街）或鄉里名稱</label>
+            <div class="control">
+                <input id="road" class="input" type="text" placeholder="例：中正路、萬里鄉" />
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-primary" id="submit">送出</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="field">
+            <label class="label" for="addr">地址快查</label>
+            <div class="control">
+                <input id="addr" class="input" type="text" placeholder="例：台中市西區林森路" />
+            </div>
+        </div>
+        <div class="field">
+            <div class="control">
+                <button class="button is-primary" id="submit-addr">送出</button>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="field">
+            <label class="label">郵遞區號為</label>
+            <div class="control">
+                <span id="result"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
